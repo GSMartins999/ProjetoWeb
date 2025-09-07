@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+main article aside {
+    flex-direction: row;
+}
+
+main article {
+    width: 60%;
+}
+
+main article section{
+    border: solid black 2px;
+    font-size: 1.4rem;
+}
+
+main aside {
+    width: 30%;
+    border: solid black 2px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 30vh;
+    border: solid black 2px;
+    width: 100vw;
+
+}
+
+.logolateral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerpaijogos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.containerjogos{
+    background-color: #333030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+}
+.containerjogos img{
+    width: 95%;
+}
+
+.containerjogos p{
+    color: white;
+}
+
+.containerIcones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+footer{
+    background-image: url(./img/rodape.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    margin-top: 50px;
+    height: 10vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer p{
+    margin: 0 auto;
+}
