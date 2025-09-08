@@ -8,6 +8,38 @@ header {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    width: 100vw;
+    height: 20vh;
+    border: solid red 5px;
+}
+
+.containerbotoes{
+    border: solid pink 5px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menusnavegacao{
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    gap: 50px;
+}
+
+.menusnavegacao a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: left;
+}
+
+.containerlogotop{
+    width: 33%;
+    border: solid black 2px;
+
 }
 
 main {
@@ -16,6 +48,8 @@ main {
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    width: 100vw;
+    height: 100%;
 }
 
 main article aside {
@@ -61,6 +95,8 @@ main aside {
     gap: 40px;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-bottom: 80px;
+
 }
 
 .containerjogos{
@@ -104,4 +140,9 @@ footer{
 
 footer p{
     margin: 0 auto;
+}
+
+footer img{
+    display: flex;
+    right: 0;
 }
