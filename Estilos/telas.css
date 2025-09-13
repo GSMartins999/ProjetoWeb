@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+
+header section {
+    height: 100%;
+    justify-content: space-around;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    min-width: 290px;
+    min-height: 80px;
+}
+
+header section p>a {
+    text-decoration: none;
+    color: black;
+}
+
+header section p>a:hover {
+    color: #FF9E48;
+}
+
+header section section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+header section section span {
+    background-color: black;
+    width: 2vw;
+    height: 0.5vh;
+    padding: 1px;
+}
+
+header section img {
+    width: 50%;
+    height: 80%;
+    min-height: 80px;
+    min-width: 145px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 20px 0 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 2rem;
+    height: auto;
+    gap: 50px;
+}
+
+.container img {
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+}
+
+.container article {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.container section {
+    width: 50%;
+    height: auto;
+    min-width: 290px;
+    min-height: 80px;
+}
+
+.container article section p {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+    height: auto;
+    gap: 50px;
+}
+
+.cards section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cards section {
+    width: 40%;
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    background-color: #333030;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    min-width: 370px;
+    cursor: pointer;
+
+}
+
+.cards section img {
+    width: 95%;
+    height: 100%;
+    min-height: 50px;
+    min-width: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+
+.cards section article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 10vh;
+}
+
+.cards section article > p, 
+.cards section > p {
+    color: white;
+    margin-top: 10px;
+    height: 30%;
+    width: 90%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main>article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+main>article p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main>article section img {
+    width: 15vw;
+    height: auto;
+}
+
+main>article section section {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+main>article section section img {
+    width: 3vw;
+    height: auto;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+main article section section > img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+footer {
+    position: relative;
+    background-image: url("./../img/rodape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    color: white;
+}
+
+footer p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 14px;
+}
+
+footer img {
+    height: 5vw;
+    width: auto;
+}
+

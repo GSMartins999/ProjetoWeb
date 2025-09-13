@@ -1,7 +1,7 @@
 body {
     padding: 0;
     border: 0;
-    background-image: url("./img/fundoLogin.png");
+    background-image: url("./../img/fundoLogin.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -26,7 +26,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid pink 2px;
 }
 
 main form {
