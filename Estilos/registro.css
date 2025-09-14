@@ -82,7 +82,6 @@ main>section {
     flex-direction: row;
     width: 100%;
     gap: 2rem;
-    /* gap fluido */
     margin-top: 4rem;
     flex-wrap: wrap;
 }
@@ -94,9 +93,7 @@ main>section a {
     text-decoration: none;
     color: white;
     flex: 1 1 150px;
-    /* botão cresce e encolhe responsivamente, mínimo 150px */
     max-width: 250px;
-    /* não fica gigante em telas grandes */
 }
 
 main>section a button {
@@ -104,9 +101,7 @@ main>section a button {
     color: white;
     width: 100%;
     padding: 0.8rem 1.5rem;
-    /* altura confortável */
     font-size: 1rem;
-    /* tamanho legível */
     border-radius: 40px;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -171,7 +166,7 @@ main article section img {
     cursor: pointer;
 }
 
-main > article section section img {
+main>article section section img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -297,13 +292,9 @@ footer img {
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
     width: 100%;
-    /* ocupa toda a largura do contêiner */
     max-width: 200px;
-    /* não fica gigante em telas grandes */
     padding: 0.8rem 1rem;
-    /* altura confortável */
     font-size: 1rem;
-    /* tamanho legível */
 }
 
 .botao button:hover {
@@ -359,10 +350,11 @@ footer img {
         display: none;
     }
 
-     header section {
+    header section {
         justify-content: center;
         gap: 10px;
     }
+
     main>section {
         flex-direction: column;
         height: auto;
