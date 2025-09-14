@@ -1,39 +1,37 @@
 * {
     padding: 0;
-    margin: 0
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: Arial, sans-serif;
     padding: 0;
-    border: 0;
+    margin: 0;
+    background-color: #fff;
 }
 
 header {
-    width: 100vw;
-    height: auto;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 300px;
+    padding: 15px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 header section {
-    height: 100%;
-    justify-content: space-around;
-    width: 33%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 100px;
-    min-width: 290px;
-    min-height: 80px;
+    gap: 20px;
 }
 
 header section p>a {
     text-decoration: none;
     color: black;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 header section p>a:hover {
@@ -77,43 +75,50 @@ main {
     flex-direction: column;
 }
 
-main > section {
+main>section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 10vh;
-    gap: 50px;
-    min-width: 300px;
-    margin-top: 100px;
+    gap: 2rem;
+    /* gap fluido */
+    margin-top: 4rem;
     flex-wrap: wrap;
 }
 
-main section a{
-    width: 10%;
-    height: 100%;
+main>section a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; 
     text-decoration: none;
-    gap: 40px;
-    min-width: 120px;
-    flex-wrap: wrap;
+    color: white;
+    flex: 1 1 150px;
+    /* botão cresce e encolhe responsivamente, mínimo 150px */
+    max-width: 250px;
+    /* não fica gigante em telas grandes */
 }
 
-main section a button{
+main>section a button {
     background-color: #FF9E48;
     color: white;
     width: 100%;
-    height: 60%;
+    padding: 0.8rem 1.5rem;
+    /* altura confortável */
+    font-size: 1rem;
+    /* tamanho legível */
     border-radius: 40px;
     cursor: pointer;
-    min-width: 120px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
+main>section a button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 main form {
-   width: 90%;
+    width: 90%;
     max-width: 900px;
     padding: 30px;
     border-radius: 25px;
@@ -166,14 +171,15 @@ main article section img {
     cursor: pointer;
 }
 
-main>article section section img {
-    width: 3vw;
-    height: auto;
-    border-radius: 100%;
+main > article section section img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
-main article section section > img:hover {
+main article section section>img:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -210,91 +216,218 @@ footer img {
 
 
 .container {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.container > section {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: wrap;
-  height: auto;
+.container>section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
 }
 
-.container > section > section {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container>section>section {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container > section > section img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+.container>section>section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.container > section > section > section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+.container>section>section>section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
-.container > section > section > section > section > section {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;
+.container>section>section>section>section>section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
 }
 
-.container > section > section > section > section > p {
-  font-size: 1.2rem;
-  color: #333;
-  margin-top: 10px;
-  width: 100%;
+.container>section>section>section>section>p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .botao {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .botao a {
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s;
-  width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 100%;
 }
 
 .botao button {
-  width: 60%;
-  padding: 10px;
-  background-color: #FF9E48;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s;
-} 
+    background-color: #FF9E48;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    /* ocupa toda a largura do contêiner */
+    max-width: 200px;
+    /* não fica gigante em telas grandes */
+    padding: 0.8rem 1rem;
+    /* altura confortável */
+    font-size: 1rem;
+    /* tamanho legível */
+}
 
 .botao button:hover {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media (max-width: 1200px) {
+    .container>section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container>section>section {
+        width: 80%;
+    }
+
+    .container>section>section img {
+        max-width: 400px;
+    }
+
+    .botao {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main form {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    main form button {
+        grid-column: span 1;
+        width: 80%;
+    }
+
+    header section {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header section p {
+        display: none;
+    }
+
+     header section {
+        justify-content: center;
+        gap: 10px;
+    }
+    main>section {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    main section a {
+        width: 80%;
+    }
+
+    main section a button {
+        width: 100%;
+    }
+
+    .container>section>section {
+        width: 100%;
+    }
+
+    .botao {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header section img {
+        height: 50px;
+    }
+
+    .container>section {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .container>section>section img {
+        max-width: 100%;
+    }
+
+    .botao button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    footer img {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    header section img {
+        display: none;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    footer img {
+        display: none;
+    }
 }
